@@ -1,0 +1,6 @@
+framework module Pods_MyLearningApp {
+  umbrella header "Pods-MyLearningApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

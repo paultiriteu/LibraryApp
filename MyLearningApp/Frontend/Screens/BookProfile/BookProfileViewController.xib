@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookProfileViewController" customModule="MyLearningApp" customModuleProvider="target">
+            <connections>
+                <outlet property="authorLabel" destination="0hq-re-zkg" id="M75-4b-Xbb"/>
+                <outlet property="deleteButton" destination="t9e-0i-7wY" id="i7V-pq-8Ml"/>
+                <outlet property="editButton" destination="Ngo-w2-3ag" id="5lq-Cj-3du"/>
+                <outlet property="textView" destination="lA5-t1-A3p" id="Jyv-ky-Tvt"/>
+                <outlet property="titleLabel" destination="j4E-DI-SM0" id="C81-Rr-EsI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4E-DI-SM0">
+                    <rect key="frame" x="20" y="74" width="374" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hq-re-zkg">
+                    <rect key="frame" x="20" y="113" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngo-w2-3ag">
+                    <rect key="frame" x="374" y="54" width="30" height="30"/>
+                    <state key="normal" title="Edit"/>
+                    <connections>
+                        <action selector="editButtonTapped:" destination="-1" eventType="touchUpInside" id="69j-SE-Q3b"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lA5-t1-A3p">
+                    <rect key="frame" x="30" y="183.5" width="354" height="628.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9e-0i-7wY">
+                    <rect key="frame" x="10" y="54" width="45" height="30"/>
+                    <state key="normal" title="Delete"/>
+                    <connections>
+                        <action selector="deleteButtonTapped:" destination="-1" eventType="touchUpInside" id="liH-nO-sq4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="t9e-0i-7wY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="0xP-Eb-3wQ"/>
+                <constraint firstItem="0hq-re-zkg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="4e2-MT-22v"/>
+                <constraint firstItem="j4E-DI-SM0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="7px-9D-a1B"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ngo-w2-3ag" secondAttribute="trailing" constant="10" id="7qw-3P-dtn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0hq-re-zkg" secondAttribute="trailing" constant="20" id="AQf-8K-4zd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="lA5-t1-A3p" secondAttribute="bottom" constant="50" id="F7l-6W-V9i"/>
+                <constraint firstItem="j4E-DI-SM0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="HQ4-rr-GOq"/>
+                <constraint firstItem="t9e-0i-7wY" firstAttribute="centerY" secondItem="Ngo-w2-3ag" secondAttribute="centerY" id="OJ0-u6-S4L"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lA5-t1-A3p" secondAttribute="trailing" constant="30" id="TCM-j1-BnL"/>
+                <constraint firstItem="lA5-t1-A3p" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="a39-j8-7eq"/>
+                <constraint firstItem="lA5-t1-A3p" firstAttribute="top" secondItem="0hq-re-zkg" secondAttribute="bottom" constant="50" id="iIn-LS-4UU"/>
+                <constraint firstItem="0hq-re-zkg" firstAttribute="top" secondItem="j4E-DI-SM0" secondAttribute="bottom" constant="10" id="k3G-ei-WnA"/>
+                <constraint firstItem="Ngo-w2-3ag" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="mJ8-zb-IMj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="j4E-DI-SM0" secondAttribute="trailing" constant="20" id="wuJ-hh-9ZS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
+        </view>
+    </objects>
+</document>
